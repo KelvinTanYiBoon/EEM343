@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="RobotNurse.URDF">
+  <link
+    name="Base">
+    <inertial>
+      <origin
+        xyz="0.0059896 -0.0060026 0.18249"
+        rpy="0 0 0" />
+      <mass
+        value="106.13" />
+      <inertia
+        ixx="4.5366"
+        ixy="-0.0098481"
+        ixz="-0.0090919"
+        iyy="3.8"
+        iyz="-0.36746"
+        izz="6.4662" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RobotNurse.URDF/meshes/Base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.50196 0.50196 0.50196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RobotNurse.URDF/meshes/Base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="w1">
+    <inertial>
+      <origin
+        xyz="0.0745364696784733 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="6.77753430076086" />
+      <inertia
+        ixx="0.0532193232995392"
+        ixy="-7.47452511341425E-35"
+        ixz="-1.41699728574879E-19"
+        iyy="0.0380198317305351"
+        iyz="-2.9562149404489E-36"
+        izz="0.0380198317305351" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RobotNurse.URDF/meshes/w1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RobotNurse.URDF/meshes/w1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="w1"
+    type="continuous">
+    <origin
+      xyz="0.2 -0.25 0.08"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="Base" />
+    <child
+      link="w1" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="w2">
+    <inertial>
+      <origin
+        xyz="0.0745364696784733 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="6.77753430076086" />
+      <inertia
+        ixx="0.0532193232995392"
+        ixy="-7.47452511341425E-35"
+        ixz="-1.1504636638225E-19"
+        iyy="0.0380198317305351"
+        iyz="-2.9562149404489E-36"
+        izz="0.0380198317305351" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RobotNurse.URDF/meshes/w2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RobotNurse.URDF/meshes/w2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="w2"
+    type="continuous">
+    <origin
+      xyz="0.2 0.25 0.08"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="Base" />
+    <child
+      link="w2" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="w3">
+    <inertial>
+      <origin
+        xyz="0.0745364696784733 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="6.77753430076086" />
+      <inertia
+        ixx="0.0532193232995393"
+        ixy="-1.39685299760028E-19"
+        ixz="9.07441870162449E-21"
+        iyy="0.0380198317305351"
+        iyz="0"
+        izz="0.0380198317305351" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RobotNurse.URDF/meshes/w3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RobotNurse.URDF/meshes/w3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="w3"
+    type="continuous">
+    <origin
+      xyz="-0.2 0.25 0.08"
+      rpy="2.97658962801217 0 3.14159265358979" />
+    <parent
+      link="Base" />
+    <child
+      link="w3" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="w4">
+    <inertial>
+      <origin
+        xyz="0.0745364696784733 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="6.77753430076086" />
+      <inertia
+        ixx="0.0532193232995393"
+        ixy="1.80265177208369E-19"
+        ixz="-1.30020618491162E-18"
+        iyy="0.0380198317305351"
+        iyz="-4.33680868994202E-19"
+        izz="0.0380198317305351" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RobotNurse.URDF/meshes/w4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RobotNurse.URDF/meshes/w4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="w4"
+    type="continuous">
+    <origin
+      xyz="-0.2 -0.25 0.08"
+      rpy="2.97658962801217 0 3.14159265358979" />
+    <parent
+      link="Base" />
+    <child
+      link="w4" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+</robot>
